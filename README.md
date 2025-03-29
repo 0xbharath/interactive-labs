@@ -1,2 +1,3 @@
-# learn-actions
-A repo for my Actions learnings via Codespaces
+# Learn Actions
+
+A playground to learn Github Actions.

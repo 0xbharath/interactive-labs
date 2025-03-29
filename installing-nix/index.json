@@ -1,0 +1,23 @@
+{
+  "title": "Learning Actions",
+  "description": "A workshop to learn Actions",
+  "details": {
+    "intro": {
+      "background": "background.sh",
+      "foreground": "foreground.sh",
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Actions Structure",
+        "text": "structure.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu-rapid"
+  }
+}
