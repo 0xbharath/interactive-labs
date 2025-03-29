@@ -1,0 +1,12 @@
+name: First Workflow
+on: push
+
+jobs:
+  first-job:
+    runs-on: ubuntu
+    steps:
+      - run: echo "First job Running"
+second-job:
+    runs-on: ubuntu
+    steps:
+      - run: echo "Second job Running"
