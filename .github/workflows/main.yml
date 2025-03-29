@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu
     steps:
       - run: echo "First job Running"
-second-job:
+  second-job:
     runs-on: ubuntu
     steps:
       - run: echo "Second job Running"
