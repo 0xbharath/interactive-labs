@@ -14,7 +14,7 @@ apt-get install -y \
     python3-venv \
     vim \
     nano \
-    file
+    file \
 
 
 ## Install UV project/package manager
