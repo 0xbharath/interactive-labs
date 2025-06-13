@@ -4,8 +4,6 @@
 
 # Clone the nSnake repository and install it
 
-touch banana.txt
-
 git clone https://github.com/alexdantas/nSnake.git /opt/nsnake && \
     cd /opt/nsnake && \
     make && \
