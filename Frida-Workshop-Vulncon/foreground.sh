@@ -4,7 +4,7 @@
 apt-get update
 
 # Install packages
-apt-get install -y \
+DEBIAN_FRONTEND=noninteractive apt-get install -y \
     tmux \
     build-essential \
     git \
