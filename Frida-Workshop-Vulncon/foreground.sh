@@ -4,6 +4,8 @@
 
 apt-get update
 
+# Install packages
+
 apt-get install -y \
     tmux \
     build-essential \
@@ -16,9 +18,8 @@ apt-get install -y \
     nano \
     file
 
-rm -rf /var/lib/apt/lists/*
-
 # Create a virtual environment and install frida-tools
+
 python3 -m venv /opt/venv
 /opt/venv/bin/pip install --upgrade pip
 /opt/venv/bin/pip install frida-tools
