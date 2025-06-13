@@ -1,9 +1,22 @@
 #!/bin/bash
 
+
+## Install UV project/package manager
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+mkdir frida-playground
+cd frida-playground/
+uv venv
+source .venv/bin/activate
+uv pip install frida-tools
+frida
+
 # Update package lists
 apt-get update
 
 # Install packages
+
 DEBIAN_FRONTEND=noninteractive apt-get install -y \
     tmux \
     build-essential \
@@ -14,21 +27,10 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y \
     python3-venv \
     vim \
     nano \
-    file \
+    file 
 
 
-## Install UV project/package manager
-
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Setup 
-
-mkdir frida-playground
-cd frida-playground/
-uv venv
-source .venv/bin/activate
-uv pip install frida-tools
-frida
+# Setup completed
 
 # Create a virtual environment
 #python3 -m venv /opt/venv
