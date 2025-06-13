@@ -1,6 +1,6 @@
 {
-  "title": "Learning Actions",
-  "description": "A workshop to learn Actions",
+  "title": "Dynamic Instrumentation on Linux & Android using Frida",
+  "description": "A workshop to learn Dynamic Instrumentation using Frida",
   "details": {
     "intro": {
       "background": "background.sh",
@@ -18,6 +18,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu-rapid"
+    "imageid": "ubuntu"
   }
 }
