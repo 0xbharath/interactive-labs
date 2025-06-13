@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update package lists and install necessary dependencies
-RUN apt-get update && apt-get install -y \
+apt-get update && apt-get install -y \
     tmux \
     build-essential \
     git \
@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y \
 
 
 # Create a virtual environment and install frida-tools
-RUN python3 -m venv /opt/venv && \
+python3 -m venv /opt/venv && \
     /opt/venv/bin/pip install --upgrade pip && \
     /opt/venv/bin/pip install frida-tools
