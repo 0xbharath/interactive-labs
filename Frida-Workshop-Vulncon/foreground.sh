@@ -16,12 +16,26 @@ apt-get install -y \
     nano \
     file
 
+
+## Install UV project/package manager
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Setup 
+
+mkdir frida-playground
+cd frida-playground/
+uv venv
+source .venv/bin/activate
+uv pip install frida-tools
+frida
+
 # Create a virtual environment
-python3 -m venv /opt/venv
+#python3 -m venv /opt/venv
 
 # Upgrade pip and install frida-tools inside the venv
-/opt/venv/bin/pip install --upgrade pip
-/opt/venv/bin/pip install frida-tools
+#/opt/venv/bin/pip install --upgrade pip
+#/opt/venv/bin/pip install frida-tools
 
 # Add venv activation to user's shell startup
-echo 'source /opt/venv/bin/activate' >> /root/.bashrc
+#echo 'source /opt/venv/bin/activate' >> /root/.bashrc
