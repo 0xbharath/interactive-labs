@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Update package lists and install necessary dependencies
-
+# Update package lists
 apt-get update
 
 # Install packages
-
 apt-get install -y \
     tmux \
     build-essential \
@@ -18,9 +16,12 @@ apt-get install -y \
     nano \
     file
 
-# Create a virtual environment and install frida-tools
-
+# Create a virtual environment
 python3 -m venv /opt/venv
+
+# Upgrade pip and install frida-tools inside the venv
 /opt/venv/bin/pip install --upgrade pip
 /opt/venv/bin/pip install frida-tools
-source /opt/venv/bin/activate
+
+# Add venv activation to user's shell startup
+echo 'source /opt/venv/bin/activate' >> /root/.bashrc
