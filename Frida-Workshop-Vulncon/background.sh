@@ -1,11 +1,17 @@
 #!/bin/bash
 
 # Update package lists and install necessary dependencies
-apt-get update && apt-get install -y \
+
+sleep 2m
+
+apt-get update
+
+apt-get install -y \
     gdb \
     strace \
     ltrace \
-    && rm -rf /var/lib/apt/lists/*
+
+rm -rf /var/lib/apt/lists/*
 
 # Clone the nSnake repository and install it
 git clone https://github.com/alexdantas/nSnake.git /opt/nsnake && \
