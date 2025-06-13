@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Update package lists and install necessary dependencies
-apt-get update && apt-get install -y \
+
+apt-get update
+
+apt-get install -y \
     tmux \
     build-essential \
     git \
@@ -12,7 +15,8 @@ apt-get update && apt-get install -y \
     vim \
     nano \
     file \
-    && rm -rf /var/lib/apt/lists/*
+
+rm -rf /var/lib/apt/lists/*
 
 
 # Create a virtual environment and install frida-tools
