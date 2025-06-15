@@ -13,6 +13,7 @@ source .venv/bin/activate
 uv pip install frida-tools
 frida
 
+tmux new-session -c ~/frida-playground/ -n frida-workshop 'bash --rcfile <(echo "source ./venv/bin/activate; exec bash")'
 
 # Setup completed
 
